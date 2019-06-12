@@ -2,200 +2,408 @@
 <html>
 <head>
 	<title>雪梨作业</title>
-	<meta charset="utf-8" />
-	<style>
-	*{
-		padding:0px;
-		margin: 0px;
-	}
-	.header-warp{
-		width:100% ;
-		height: 30px;
-		background-color: rgb(244,244,244);
-	}
-	.header{
-		width: 1200px;
-		height: 30px;
-		margin:0px auto;
-	}
-	.header-left p,img{
-		display: block;
-		float: left;
-		margin-top: 2px;
-	}
-	.header-right{
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.header-wrap{
+			width: 100%;
+			height: 30px;
+			background-color: rgb(244, 244, 244);
+			margin-bottom: 1px;
+		}
+		.header{
+			width: 1200px;
+			margin: 0px auto;
+		}
+		.left{
+			float: left;
+
+		}
+		.right{
 			float: right;
-	}
-	.header-right li{
-		display: inline-block;
-	}
-	.header-right a{
-		text-decoration: none;
-		color: black;
-	}
-	.nav-wrap{
-		width: 100%;
-		height: 160px;
-	}
-	.footer-top-shezhi a{
-		
-	}
+		}
+		li{
+			display: inline;
+			margin-right: 12px;
+		}
+		a{
+			font-size: 12px;
+			text-decoration: none;
+			color: black;
+		}
+		li img{
+			position: relative;
+			top: 3px;
+		}
+		.sousuo-wrap{
+			width: 100%;
+			height: 95px;
+		}
+		.content{
+			width: 1200px;
+			height: 95px;
+			margin: 0px auto;
+		}
+		.logo{
+			width: 378px;
+			height: 95px;
+			margin: 0px auto;
+			float: left;
+		}
+		.logo img{
+			position: relative;
+			bottom: -10px;
+		}
+		.text{
+			width: 408px;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+			position: relative;
+			top: 40px;
+		}
+		.text input{
+			width: 408px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 14px;
+			color: rgb(197, 197, 197);
+			border:3px solid rgb(248, 56, 56);
+			text-indent: 1em;
+		}
+		.sub{
+			position: relative;
+			float: left;
+			top: 40px;
+			left: 2px;
+		}
+		.sub input{
+			color: white;
+			width: 92px;
+			height: 46px;
+			background-color: rgb(248, 56, 56);
+			border: none;
+		}
+		.che{
+			position: relative;
+			top: 40px;
+			right: 10px;
+			float: right;
+			background-color: rgb(245, 245, 245);
+			width: 153px;
+			height: 38px;
+			font-size: 14px;
+			text-indent: 1em;
+			line-height: 38px;
+		}
+		span{
+			color: rgb(248, 56, 56);
+		}
+		.nav-wrap{
+			height: 60px;
+			width: 100%;
+			background-color: white;
+		}
+		.nav{
+			height: 60px;
+			width: 1200px;
+			margin: 0px auto;
+			position: relative;
+			bottom: -14px;
+		}
+		.nav li a{
+			text-indent: 15px;
+			width: 87px;
+			height: 35px;
+			line-height: 35px;
+			font-size: 16px;
+			margin-right: 144px;
+		}
+		.nav li a:hover{
+			display: inline-block;
+			width: 87px;
+			height: 35px;
+			color: white;
+			background-color: rgb(253, 3, 4);
+			border-radius: 6px/6px;
+			margin-right: 114px;
+		}
+		.book-wrap{
+			height: 68px;
+			width: 100%;
+		}
+		.book{
+			width: 1200px;
+			height: 68px;
+			margin: 0px auto;
+			line-height: 68px;
+			font-size: 14px;
+		}
+		.body-wrap{
+			background-color: rgb(251, 251, 251);
+			width: 100%;
+			height: 700px;
+		}
+		.body{
+			width: 1200px;
+			margin: 0px auto;
+		}
+		.body-left{
+			width: 215px;
+			height: 560px;
+			float: left;
+			margin-right: 12px;
+		}
+		.body-right{
+			float: left;
+			width: 960px;
+			height: 558px;
+			background-color: white;
+			text-align: center;
+		}
+		.from{
+			background-color: white;
+			width: 215px;
+			text-indent: 35px;
+			height: 42px;
+			line-height: 42px;
+		}
+		.from a{
+			font-size: 16px;
+		}
+		.from img{
+			margin-right: 28px;
+		}
+		.rap{
+			font-size: 16px;
+			background-color: white;
+			margin-top: 8px;
+			width: 215px;
+			height: 510px;
+			text-indent: 75px;
+		}
+		.rap a{
+			display: block;
+			position: relative;
+			top: 10px;
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+		.picture-top{
+			float: left;
+			margin-top: 18px;
+			margin-bottom: 19px;
+			margin-left: 16px;
+			width: 220px;
+			height: 253px;
+			border: 1px solid rgb(219, 219, 219);
+		}
+		.body-right img{
+				
+			padding-top:20px ;
+		}
+		.body-right p{
+				margin-top: 10px;
+		}
+		.price{
+			font-size: 16px;
+			color: rgb(163, 163, 163);
+		}
+		.picture-bottom{
+			float: left;
+			margin-bottom: 19px;
+			margin-left: 16px;
+			width: 220px;
+			height: 253px;
+			border: 1px solid rgb(219, 219, 219);
+		}
+		.footer-wrap{
+			width: 100%;
+			height: 133px;
+			background-color: rgb(46, 46, 46);
+		}
+		.footer{
+			height: 133px;
+			width: 1200px;
+			margin: 0px auto;
+		}
+		.footer a{
+			color: white;
+			font-size: 16px;
+			
+		}
+		.jianjie{
+			display: inline-block;
+			margin-right: 195px;
+			float: left;
+		}
+		.daoer{
+			display: inline-block;
+			margin-right: 120px;
+			float: left;
+		}
+		.daoer>ul>li{
+			display: block;
+			margin-top: 10px;
+		}
+		.daoyi{
+			display: inline;
+			float: left;
+		}
+		.jianjie>ul>li{
+			display: block;
+			margin-top: 10px;
+		}
+		.daoyi>ul>li{
+			display: block;
+			margin-top: 10px;
+		}
+		.null{
+			color: rgb(69 ,69 ,69) ;
+			height: 1px ;
+			width: 100% ;
+			border: none;
+		}
+		.end-wrap{
+			width: 100%;
+			height: 90px;
+			background-color: rgb(46, 46, 46);
+		}
+		.end{
+			width: 1200px;
+			height: 90px;
+			color: rgb(164, 164, 164);
+			text-align: center;
+			margin: 0px auto;
+		}
 	</style>
 </head>
 <body>
-	<div class="header-warp">
+	<form>
+	<div class="header-wrap">
 		<div class="header">
-			<div class="header-left">
-				<p>我的收藏&nbsp&nbsp</p>
-				<p>E族之家手机版&nbsp&nbsp</p>
-				<img src="images/qq.gif">
-				<p>328203328</p>
-			</div>
-			<div class="header-right">
+			<div class="left">
 				<ul>
-					<li>扫描加入</li>
-					<li>欢迎来到E族之家</li>
+					<li><a href="#">我的收藏 </a></li>
+					<li><a href="#">E族之家手机版 </a></li>
+					<li><img src="images/qq.gif"><a href="#">32828328</a></li>
+				</ul>
+			</div>
+			<div class="right">
+				<ul>
+					<li><a href="#">扫描加入 欢迎来到E族之家</a></li>
 					<li><a href="#">请登录</a></li>
-					<li><p>&nbsp|&nbsp</p></li>
+					<li>|</li>
 					<li><a href="#">注册</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="nav-wrap">
-		<div class="ezu">
-			<img src="">
+	<div class="sousuo-wrap">
+		<div class="content">
+			<div class="logo"><img src="images/images_07.gif"></div>
+			<div class="text"><input type="text" name="搜索" value="请输入关键词！"></div>
+			<div class="sub"><input type="submit" name="sub" value="搜索"></div>
+			<div class="che"><img src="images/images_10.gif">购物车（<span>0</span>）件</div>
 		</div>
-		<div class="sousuo">
-			<form>
-				<input >
-				<input >
-			</form>
-		</div>
-		<div class="gouwu">
-			<img src="">
-			<p>购物车（<span>0</span>件）</p>
-		</div>
+	</div>
+	<div class="body-wrap">
+		<div class="nav-wrap">
 		<div class="nav">
 			<ul>
-				<li><a href="#">首页</a></li>
+				<li><a href="#">&nbsp首页</a></li>
 				<li><a href="#">E族生活</a></li>
 				<li><a href="#">E族服务</a></li>
 				<li><a href="#">E族爱心</a></li>
 			</ul>
 		</div>
-	</div>
-	<div class="text-wrap">
-		<div class="text-nav">
-			<ul>
-				<li>当前位置：</li>
-				<li>E族爱心</li>>
-				<li>食品</li>
-			</ul>
 		</div>
-		<div class="text-left">
-			<div class="text-left-top">
-				<img src="">
-				<p>全部分类</p>
-			</div>
-			<div class="text-left-bottom">
-				><p><span>食品</span></p>>
-				<p>生活用品</p>
-			</div>
-			<div class="text-right">
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">精品辣椒100g</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">特级百香果3斤</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">万威啤酒500ml</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">万威啤酒500ml</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="text-right">
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">精品辣椒100g</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">特级百香果3斤</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">万威啤酒500ml</p>
-					<p>￥90.00</p>
-				</div>
-				<div class="tupian">
-					<img src="">
-					<p class="yanse">万威啤酒500ml</p>
-					<p>￥90.00</p>
-				</div>
+		<div class="book-wrap">
+			<div class="book">
+				<ul>
+					<li>当前位置：</li>
+					<li>E族爱心&gt</li>
+					<li>食品</li>
+				</ul>
 			</div>
 		</div>
+		<div class="body">
+		<div class="body-left">
+		<div class="from"><img src="images/images_15.gif"/><a href="#">全部分类</a></div>
+			<div class="rap">
+				<div><a href="#"><span>&gt食品</span></a></div>
+				<div><a href="#">&gt生活用品</a></div>
+			</div>
+		</div>	
+		<div class="body-right">
+				<div class="picture-top"><img src="images/images_19.gif"><p class="price">精品辣椒100g</p><p>￥90.00</p></div>
+				<div class="picture-top"><img src="images/images_21.gif"><p class="price">特级百香果3斤</p><p>￥90.00</p></div>
+				<div class="picture-top"><img src="images/images_23.gif"><p class="price">万威啤酒500ml</p><p>￥90.00</p></div>
+				<div class="picture-top"><img src="images/images_25.gif"><p class="price">万威啤酒500ml</p><p>￥90.00</p></div>
+				<div class="picture-bottom"><img src="images/images_19.gif"><p class="price">精品辣椒100g</p><p>￥90.00</p></div>
+				<div class="picture-bottom"><img src="images/images_21.gif"><p class="price">特级百香果3斤</p><p>￥90.00</p></div>
+				<div class="picture-bottom"><img src="images/images_23.gif"><p class="price">万威啤酒500ml</p><p>￥90.00</p></div>
+				<div class="picture-bottom"><img src="images/images_25.gif"><p class="price">万威啤酒500ml</p><p>￥90.00</p></div>
+		</div>
 	</div>
-	<div class="footer-warp">
+	</div>
+	<div class="footer-wrap">
 		<div class="footer">
-			<div class="footer-top">
-				<div class="footer-top-shezhi">
-					<ul>
-						<li><a href="#">新手上路</a></li>
-						<li><a href="#">售后流程</a></li>
-						<li><a href="#">购物流程</a></li>
-						<li><a href="#">订购方式</a></li>
-					</ul>
-				</div>
-				<div class="footer-top-shezhi">
-					<ul>
-						<li><a href="#">配送方式</a></li>
-						<li><a href="#">货到付款区域</a></li>
-						<li><a href="#">配送支付查询</a></li>
-						<li><a href="#">支付方式说明</a></li>
-					</ul>
-				</div>
-				<div class="footer-top-shezhi">
-					<ul>
-						<li><a href="#">购物指南</a></li>
-						<li><a href="#">常见问题</a></li>
-						<li><a href="#">订购流程</a></li>
-						<li><a href="#">注册新会员</a></li>
-					</ul>
-				</div>
-				<div class="footer-top-shezhi">
-					<ul>
-						<li><a href="#">售后服务</a></li>
-						<li><a href="#">退换货原则</a></li>
-						<li><a href="#">售后服务保证</a></li>
-						<li><a href="#">换货流程</a></li>
-					</ul>
-				</div>
-				<div class="footer-top-shezhi">
-					<ul>
-						<li><a href="#">关于我们</a></li>
-						<li><a href="#">网站故障报告</a></li>
-						<li><a href="#">联系我们</a></li>
-						<li><a href="#">投诉与建议</a></li>
-					</ul>
-				</div>
+			<div class="jianjie">
+				<ul>
+					<li><a href="#">新手上路</a></li>
+					<li><a href="#">售后流程</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">订购方式</a></li>
+				</ul>
 			</div>
-			<div class="footer-bottom">
-				<p>E族生活  |  居家维修保养  |  住宿优惠信息  |  出行接送  |  E族活动  |  E族爱心  |  积分商城 </p>
-				<p>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+			<div class="jianjie">
+				<ul>
+					<li><a href="#">配送方式</a></li>
+					<li><a href="#">货到付款方式</a></li>
+					<li><a href="#">配送支付查询</a></li>
+					<li><a href="#">支付方式说明</a></li>
+				</ul>
+			</div>
+			<div class="jianjie">
+				<ul>
+					<li><a href="#">购物指南</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li><a href="#">订购流程</a></li>
+					<li><a href="#">注册新会员</a></li>
+				</ul>
+			</div>
+			<div class="daoer">
+				<ul>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">退换货原则</a></li>
+					<li><a href="#">售后服务保证</a></li>
+					<li><a href="#">换货流程</a></li>
+				</ul>
+			</div>
+			<div class="daoyi">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">网站故障报告</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">投诉与建议</a></li>
+				</ul>
 			</div>
 		</div>
+
 	</div>
+	<div class="null"></div>
+	<div class="end-wrap">
+		<div class="end">
+			<p>E族生活  |  居家维修保养  |  住宿优惠信息  |  出行接送  |  E族活动  |  E族爱心  |  积分商城</p>
+			<p>
+				 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号
+			</p>
+		</div>
+	</div>
+	</form>
 </body>
-</html> 
+</html>
